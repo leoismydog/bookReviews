@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Book Reviews</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: rgb(222, 253, 255);
+           }
+        </style>
+    </head>
+    <body>
+        <h1>Book Reviews</h1>
+
+        <script>
+        class Book {
+        constructor(name, num) {
+        this._name = name;
+        this._num = num
+        }
+        get name() {
+        return this._name
+        }
+        get num() {
+        if(typeof this.num === number) {
+        return this._num
+        } else {
+        return 'error'
+        }
+        }
+        
+        }
+       const Hola = new Book('hola', 9)
+       document.body.innerHTML = Hola
+        </script>
+    </body>
+</html>
